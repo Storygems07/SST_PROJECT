@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StoryGems</title>
+  
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <div class="logo">📘 StoryGems</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="books.html">Books</a></li>
+      <li><a href="#">Plans</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="btn btn-primary">Sign Up</button>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <div class="hero">
+    <div>
+      <h1>StoryGems</h1>
+      <p>A World of Stories for Every Age</p>
+      <button class="btn btn-primary">Explore Books</button>
+      <button class="btn btn-outline" style="margin-left:15px">View Plans</button>
+    </div>
+  </div>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section>
+    <h2 class="section-title">About StoryGems</h2>
+    <p class="section-sub">Building a world where stories connect generations</p>
+    <div class="vision">
+      StoryGems is a premium storytelling platform bringing timeless classics and modern literature together for kids, teens, and adults.
+    </div>
+  </section>
+
+  <!-- ===== FOUNDERS SECTION ===== -->
+  <section>
+    <h2 class="section-title">Meet the Founders</h2>
+    <div class="grid">
+      <div class="card">
+        <img class="avatar" src="https://i.pravatar.cc/150?img=12" />
+        <h3>Sai Aashish</h3>
+        <p style="color:#4f46e5">Founder</p>
+        <p>Passionate about making quality literature accessible to everyone.</p>
+      </div>
+      <div class="card">
+        <img class="avatar" src="https://i.pravatar.cc/150?img=15" />
+        <h3>Roshan</h3>
+        <p style="color:#4f46e5">Co‑Founder</p>
+        <p>Committed to building a serious reading brand for the digital age.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US SECTION ===== -->
+  <section>
+    <h2 class="section-title">Why Choose StoryGems?</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>📚 Vast Library</h3>
+        <p>Thousands of stories across genres and age groups.</p>
+      </div>
+      <div class="card">
+        <h3>⭐ Quality Content</h3>
+        <p>Carefully curated books from mythology to modern fiction.</p>
+      </div>
+      <div class="card">
+        <h3>👨‍👩‍👧 All Ages</h3>
+        <p>Something special for kids, teens, and adults.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    © 2026 StoryGems. All rights reserved.
+  </footer>
+
+  <!-- Link to JS -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
