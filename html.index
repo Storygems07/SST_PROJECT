@@ -1,95 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StoryGems</title>
-  
-  <!-- Link to external CSS -->
-  <link rel="stylesheet" href="css/style.css">
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>15-Minute Smart City | GIS Urban Planning</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #e3f2fd, #f8f9fa);
+      color: #222;
+    }
+    header {
+      background: linear-gradient(90deg, #1e3c72, #2a5298);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    .map-card {
+      background: white;
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+    .map-card:hover {
+      transform: translateY(-6px);
+    }
+    .map-card img {
+      width: 100%;
+      border-radius: 15px;
+      border: 4px solid #1e3c72;
+    }
+    .section-title {
+      text-align: center;
+      margin: 50px 0 20px;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #1e3c72;
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .info-box {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    .info-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+    .info-box h3 {
+      color: #2a5298;
+      margin-bottom: 10px;
+    }
+    .info-box p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    footer {
+      margin-top: 60px;
+      background: #1e3c72;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+  </style>
 </head>
 <body>
-
-  <!-- ===== NAVIGATION ===== -->
-  <nav>
-    <div class="logo">📘 StoryGems</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="books.html">Books</a></li>
-      <li><a href="#">Plans</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <button class="btn btn-primary">Sign Up</button>
-  </nav>
-
-  <!-- ===== HERO SECTION ===== -->
-  <div class="hero">
-    <div>
-      <h1>StoryGems</h1>
-      <p>A World of Stories for Every Age</p>
-      <button class="btn btn-primary">Explore Books</button>
-      <button class="btn btn-outline" style="margin-left:15px">View Plans</button>
-    </div>
+<header>
+  <h1>15-Minute Smart City</h1>
+  <p>GIS-Based Urban Planning & Sustainable Transport Model</p>
+</header>
+<div class="container">
+  <div class="map-card">
+    <img src="city_map.png" alt="15 Minute City GIS Map">
   </div>
-
-  <!-- ===== ABOUT SECTION ===== -->
-  <section>
-    <h2 class="section-title">About StoryGems</h2>
-    <p class="section-sub">Building a world where stories connect generations</p>
-    <div class="vision">
-      StoryGems is a premium storytelling platform bringing timeless classics and modern literature together for kids, teens, and adults.
+  <h2 class="section-title">City Planning Highlights</h2>
+  <div class="info-grid">
+    <div class="info-box">
+      <h3>Central Hub</h3>
+      <p>
+        The city center includes schools, hospitals, offices, and malls,
+        ensuring all essential services are easily accessible.
+      </p>
     </div>
-  </section>
-
-  <!-- ===== FOUNDERS SECTION ===== -->
-  <section>
-    <h2 class="section-title">Meet the Founders</h2>
-    <div class="grid">
-      <div class="card">
-        <img class="avatar" src="https://i.pravatar.cc/150?img=12" />
-        <h3>Sai Aashish</h3>
-        <p style="color:#4f46e5">Founder</p>
-        <p>Passionate about making quality literature accessible to everyone.</p>
-      </div>
-      <div class="card">
-        <img class="avatar" src="https://i.pravatar.cc/150?img=15" />
-        <h3>Roshan</h3>
-        <p style="color:#4f46e5">Co‑Founder</p>
-        <p>Committed to building a serious reading brand for the digital age.</p>
-      </div>
+    <div class="info-box">
+      <h3> Residential Areas</h3>
+      <p>
+        Residential zones are planned around the central hub to reduce
+        travel time and improve quality of life.
+      </p>
     </div>
-  </section>
 
-  <!-- ===== WHY CHOOSE US SECTION ===== -->
-  <section>
-    <h2 class="section-title">Why Choose StoryGems?</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>📚 Vast Library</h3>
-        <p>Thousands of stories across genres and age groups.</p>
-      </div>
-      <div class="card">
-        <h3>⭐ Quality Content</h3>
-        <p>Carefully curated books from mythology to modern fiction.</p>
-      </div>
-      <div class="card">
-        <h3>👨‍👩‍👧 All Ages</h3>
-        <p>Something special for kids, teens, and adults.</p>
-      </div>
+    <div class="info-box">
+      <h3> Tram Connectivity</h3>
+      <p>
+        Tram lines connect all areas with stations placed every 400–800 meters
+        for easy public transport access.
+      </p>
     </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    © 2026 StoryGems. All rights reserved.
-  </footer>
-
-  <!-- Link to JS -->
-  <script src="js/main.js"></script>
-
+    <div class="info-box">
+      <h3> Active Transport</h3>
+      <p>
+        Dedicated walking and cycling paths promote healthy lifestyles and
+        reduce pollution.
+      </p>
+    </div>
+    <div class="info-box">
+      <h3>15-Minute Zone</h3>
+      <p>
+        All daily needs are reachable within 15 minutes, making the city
+        efficient, eco-friendly, and sustainable.
+      </p>
+    </div>
+    <div class="info-box">
+      <h3> Eco-Friendly Design</h3>
+      <p>
+        Reduced traffic, lower carbon emissions, and smart land use
+        make this city environmentally responsible.
+      </p>
+    </div>  
+  </div>
+</div>
+<footer>
+  GIS-Based Digital City Map | Project From 8MB Class
+</footer>
 </body>
 </html>
